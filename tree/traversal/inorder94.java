@@ -27,7 +27,7 @@ class Solution {
 	public List<Integer> inorderTraversalIteration(TreeNode root) {
 		List<Integer> result = new ArrayList();
 		if(root == null) return result;
-		Stack<TreeNode> s = new Stack();
+		Stack<TreeNode> s = new Stack(); //<>对象老是写错
 		while(root != null || !s.isEmpty()) {
 			while(root != null) {
 				s.push(root);
